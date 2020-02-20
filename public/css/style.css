@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.con {
+  padding-top: 20vh;
+}
+
+.con img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -999;
+  opacity: 0.5;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.con .innerCon {
+  max-width: 500px;
+  margin: 0 auto;
+  border: 1px solid #8a8a8a;
+  background-color: rgba(247, 247, 247, 0.74);
+  -webkit-box-shadow: 10px 15px 0 0px rgba(173, 173, 173, 0.432);
+          box-shadow: 10px 15px 0 0px rgba(173, 173, 173, 0.432);
+  padding: 30px 60px;
+}
+
+.con .innerCon h4 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.con .innerCon form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.con .innerCon form input {
+  margin: 10px 0;
+  padding: 5px 10px;
+  border: none;
+  border-bottom: 2px solid #b3b3b3;
+  color: #202020;
+  background-color: inherit;
+}
+
+.con .innerCon .bottomDiv {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.con .innerCon .bottomDiv button {
+  padding: 10px 20px;
+  max-width: 150px;
+  cursor: pointer;
+  background-color: #303030;
+  color: white;
+  border: 1.5px solid #303030;
+  border-radius: 10px;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+
+.con .innerCon .bottomDiv button:hover {
+  background-color: white;
+  color: #303030;
+}
+
+.con .innerCon .bottomDiv a {
+  color: #303030;
+}
+
+.con .innerCon .bottomDiv a:hover {
+  color: #636363;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */

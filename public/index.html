@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="media/img/icon.png" type="image/gif" sizes="16x16" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+    <title>NodeJS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="con">
+        <img src="./media/img/bg.jpg" alt="background">
+        <div class="innerCon">
+            <h4>Hello, you can send me a <span>Message</span> from here, to tell me what you think. I will reply it as
+                soon as I can.</h4>
+
+            <form action="/user_create" method="POST">
+                <input type="text" placeholder="Name" name="create_first_name" required/>
+                <input type="tel" placeholder="Phone Number: 10 digital number" pattern="[0-9]{10}" name="create_last_name" required/>
+                <input type="email" placeholder="E-mail" name="create_email" required/>
+                <input type="text" placeholder="Message..." name="create_comment" required/>
+                <div class="bottomDiv">
+                    <button>Submit</button>
+
+
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <!--font awesome-->
+    <link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+</body>
+
+</html>
