@@ -113,17 +113,9 @@ app.listen(port, () => console.log(`Frank Lam app listening on port ${port}!`));
 
 //test
 
-app.get("/refresh", async(req, res) => {
-  console.log("refresh1");
-
-  await radioAndCorona();
- 
-res.send("refresh");
-});
-
-
-async function radioAndCorona(){
-  //radio
+app.get("/refreshRadio", async(req, res) => {
+  console.log("refreshRadio");
+ //radio
   const postData = await hkfmScraper.hkfmScraper();
   //write to firestore public
   fbdb.collection("public")
@@ -131,7 +123,11 @@ async function radioAndCorona(){
   .update({radio:postData})
   .catch(error => {
     console.error("Error adding document: ", error);
-  });
+  });;
+ 
+res.send("refreshRadio completed");
+});
+app.get("/refreshCorona", async(req, res) => {
   //corona
   const post2Data = await corona.corona();
   fbdb.collection("public")
@@ -140,4 +136,5 @@ async function radioAndCorona(){
   .catch(error => {
     console.error("Error adding document : ", error);
   });
-}
+res.send("refreshCorona completed");
+});
