@@ -114,7 +114,7 @@ app.listen(port, () => console.log(`Frank Lam app listening on port ${port}!`));
 //test
 
 app.get("/refresh", async(req, res) => {
-  console.log("refresh");
+  console.log("refresh1");
 
   await radioAndCorona();
  
