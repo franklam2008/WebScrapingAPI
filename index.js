@@ -121,11 +121,6 @@ app.get("/refresh", async(req, res) => {
 res.send("refresh");
 });
 
-//auto update radio to Firebase
-setInterval(async () => {
-  console.log("Run Interval - 30 mins");
-  // radioAndCorona();
-}, 7200000); // every 2hr (1800000)
 
 async function radioAndCorona(){
   //radio
