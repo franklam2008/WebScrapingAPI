@@ -128,6 +128,7 @@ app.get("/refreshRadio", async(req, res) => {
 res.send("refreshRadio completed");
 });
 app.get("/refreshCorona", async(req, res) => {
+  console.log("refreshCorona");
   //corona
   const post2Data = await corona.corona();
   fbdb.collection("public")
